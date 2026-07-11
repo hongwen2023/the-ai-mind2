@@ -32,10 +32,11 @@
 | [`20_Chapter18_Trees_Forests_Boosting.md`](20_Chapter18_Trees_Forests_Boosting.md) | 第 18 章《树、森林与提升》（决策树/Gini/**装袋降方差+随机森林去相关**/**梯度提升=函数梯度下降**） |
 | [`21_Chapter19_Unsupervised_Learning.md`](21_Chapter19_Unsupervised_Learning.md) | 第 19 章《无监督学习——发现结构》（k-means=坐标下降/**PCA=SVD、重构误差=丢弃奇异值²=Eckart–Young**/密度估计） |
 | [`22_Chapter20_Latent_Variables_EM.md`](22_Chapter20_Latent_Variables_EM.md) | 第 20 章《隐变量与 EM——通往生成建模的桥》（GMM/软责任/**EM=ELBO 坐标上升、logP=ELBO+KL**/k-means 硬极限/桥向 VAE） |
+| [`23_Chapter21_Evaluation.md`](23_Chapter21_Evaluation.md) | 第 21 章《评估、诊断与实验方法》（Book III 收官：混淆矩阵/**AUC=排序概率**/不平衡揭穿/交叉验证/泄漏/学习曲线诊断） |
 | [`03_Self_Evaluation.md`](03_Self_Evaluation.md) | 独立外审自我评估（7 维打分 + 诚实列不足） |
-| [`code/`](code/) | 第 1–20 章配套代码 + 回归测试 + 锁定依赖（见 `code/README.md`） |
+| [`code/`](code/) | 第 1–21 章配套代码 + 回归测试 + 锁定依赖（见 `code/README.md`） |
 
-> **Book I（Ch1–7）与 Book II（Ch8–15）均已完整交付；Book III（经典机器学习，Ch16–21）进行中。** Book II 收官时 **Ch7 的四张欠条全部结清**：梯度推导(Ch9)、交叉熵合法性(Ch12)、GD 收敛(Ch14)、泛化界(Ch15)。Prelude P.1、架构、自评见上表。
+> **Book I（Ch1–7）、Book II（Ch8–15）、Book III（Ch16–21）三本书均已完整交付**（Prelude + 21 章）。Book II 收官时 **Ch7 的四张欠条全部结清**（梯度 Ch9 / 交叉熵 Ch12 / GD 收敛 Ch14 / 泛化界 Ch15）；Book III 把数学引擎实例化成一整套经典模型（线性/核/树/聚类/混合）+ 诚实评估它们的手艺，并逼出 Book IV 深度学习（手工/固定表示 → 学到的表示）。Prelude P.1、架构、自评见上表。
 
 ## 快速运行配套代码
 
@@ -62,7 +63,8 @@ python -m ch17.kernels_and_svm              # 复现第 17 章 线性vs RBF核 +
 python -m ch18.trees_forests_boosting       # 复现第 18 章 单树/森林/梯度提升
 python -m ch19.unsupervised                 # 复现第 19 章 k-means收敛 + PCA(SVD)
 python -m ch20.gmm_em                       # 复现第 20 章 GMM-EM 似然单调爬升 + 软责任
-pytest -q                             # 跑全部数值回归测试（ch01–ch20，92 项）
+python -m ch21.evaluation                   # 复现第 21 章 指标/AUC双算法/不平衡/CV
+pytest -q                             # 跑全部数值回归测试（ch01–ch21，96 项）
 ```
 
 CI 见 `.github/workflows/aimind-ci.yml`：改动课程代码时自动重跑测试。
