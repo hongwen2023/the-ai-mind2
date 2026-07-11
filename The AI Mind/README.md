@@ -28,8 +28,9 @@
 | [`16_Chapter14_Optimization.md`](16_Chapter14_Optimization.md) | 第 14 章《优化——如何下山》（凸性/**下降引理偿还 Ch7 GD 收敛欠条**/收敛率/SGD/非凸桥/KKT） |
 | [`17_Chapter15_Learning_Theory.md`](17_Chapter15_Learning_Theory.md) | 第 15 章《学习理论——泛化为何可能》（Book II 收官：**泛化界=Hoeffding+union bound**/PAC/VC 维/经典理论边界） |
 | [`18_Chapter16_Linear_Models.md`](18_Chapter16_Linear_Models.md) | 第 16 章《线性模型》（Book III 开篇：机器学习的"氢原子"；线性/逻辑回归/L2 岭/L1 lasso/正则化路径） |
+| [`19_Chapter17_Kernels_and_SVM.md`](19_Chapter17_Kernels_and_SVM.md) | 第 17 章《核方法与 SVM》（核技巧/RBF 无穷维/表示定理/**SVM 对偶推导+KKT 支持向量**/软间隔 hinge） |
 | [`03_Self_Evaluation.md`](03_Self_Evaluation.md) | 独立外审自我评估（7 维打分 + 诚实列不足） |
-| [`code/`](code/) | 第 1–16 章配套代码 + 回归测试 + 锁定依赖（见 `code/README.md`） |
+| [`code/`](code/) | 第 1–17 章配套代码 + 回归测试 + 锁定依赖（见 `code/README.md`） |
 
 > **Book I（Ch1–7）与 Book II（Ch8–15）均已完整交付；Book III（经典机器学习，Ch16–21）进行中。** Book II 收官时 **Ch7 的四张欠条全部结清**：梯度推导(Ch9)、交叉熵合法性(Ch12)、GD 收敛(Ch14)、泛化界(Ch15)。Prelude P.1、架构、自评见上表。
 
@@ -54,7 +55,8 @@ python -m ch13.erm_and_bayes_risk           # 复现第 13 章 贝叶斯地板 +
 python -m ch14.optimization                 # 复现第 14 章 GD 步长三态 + SGD
 python -m ch15.learning_theory              # 复现第 15 章 泛化差距 vs n/容量/随机标签
 python -m ch16.linear_models                # 复现第 16 章 岭/lasso 正则化路径
-pytest -q                             # 跑全部数值回归测试（ch01–ch16，76 项）
+python -m ch17.kernels_and_svm              # 复现第 17 章 线性vs RBF核 + 支持向量
+pytest -q                             # 跑全部数值回归测试（ch01–ch17，80 项）
 ```
 
 CI 见 `.github/workflows/aimind-ci.yml`：改动课程代码时自动重跑测试。
