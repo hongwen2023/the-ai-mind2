@@ -30,8 +30,9 @@
 | [`18_Chapter16_Linear_Models.md`](18_Chapter16_Linear_Models.md) | 第 16 章《线性模型》（Book III 开篇：机器学习的"氢原子"；线性/逻辑回归/L2 岭/L1 lasso/正则化路径） |
 | [`19_Chapter17_Kernels_and_SVM.md`](19_Chapter17_Kernels_and_SVM.md) | 第 17 章《核方法与 SVM》（核技巧/RBF 无穷维/表示定理/**SVM 对偶推导+KKT 支持向量**/软间隔 hinge） |
 | [`20_Chapter18_Trees_Forests_Boosting.md`](20_Chapter18_Trees_Forests_Boosting.md) | 第 18 章《树、森林与提升》（决策树/Gini/**装袋降方差+随机森林去相关**/**梯度提升=函数梯度下降**） |
+| [`21_Chapter19_Unsupervised_Learning.md`](21_Chapter19_Unsupervised_Learning.md) | 第 19 章《无监督学习——发现结构》（k-means=坐标下降/**PCA=SVD、重构误差=丢弃奇异值²=Eckart–Young**/密度估计） |
 | [`03_Self_Evaluation.md`](03_Self_Evaluation.md) | 独立外审自我评估（7 维打分 + 诚实列不足） |
-| [`code/`](code/) | 第 1–18 章配套代码 + 回归测试 + 锁定依赖（见 `code/README.md`） |
+| [`code/`](code/) | 第 1–19 章配套代码 + 回归测试 + 锁定依赖（见 `code/README.md`） |
 
 > **Book I（Ch1–7）与 Book II（Ch8–15）均已完整交付；Book III（经典机器学习，Ch16–21）进行中。** Book II 收官时 **Ch7 的四张欠条全部结清**：梯度推导(Ch9)、交叉熵合法性(Ch12)、GD 收敛(Ch14)、泛化界(Ch15)。Prelude P.1、架构、自评见上表。
 
@@ -58,7 +59,8 @@ python -m ch15.learning_theory              # 复现第 15 章 泛化差距 vs n
 python -m ch16.linear_models                # 复现第 16 章 岭/lasso 正则化路径
 python -m ch17.kernels_and_svm              # 复现第 17 章 线性vs RBF核 + 支持向量
 python -m ch18.trees_forests_boosting       # 复现第 18 章 单树/森林/梯度提升
-pytest -q                             # 跑全部数值回归测试（ch01–ch18，83 项）
+python -m ch19.unsupervised                 # 复现第 19 章 k-means收敛 + PCA(SVD)
+pytest -q                             # 跑全部数值回归测试（ch01–ch19，87 项）
 ```
 
 CI 见 `.github/workflows/aimind-ci.yml`：改动课程代码时自动重跑测试。
