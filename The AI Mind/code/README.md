@@ -23,12 +23,16 @@ code/
 ├── ch05/
 │   ├── __init__.py
 │   └── turning_world_into_numbers.py  # 第 5 章：表示（混合表格→X；整数 vs one-hot 距离对照）
+├── ch06/
+│   ├── __init__.py
+│   └── induction_first_lesson.py  # 第 6 章：归纳（kNN 记忆vs泛化；训练/测试误差 U 型）
 └── tests/
     ├── test_ch01.py              # 第 1 章数值回归测试（低次容差断言 + 高次趋势断言）
     ├── test_ch02.py              # 第 2 章数值回归测试（确定性整数搜索，精确断言）
     ├── test_ch03.py              # 第 3 章数值回归测试（确定性计数，精确断言）
     ├── test_ch04.py              # 第 4 章数值回归测试（loop vs 向量化等价，精确断言）
-    └── test_ch05.py              # 第 5 章数值回归测试（表示的几何，精确断言）
+    ├── test_ch05.py              # 第 5 章数值回归测试（表示的几何，精确断言）
+    └── test_ch06.py              # 第 6 章数值回归测试（记忆vs泛化 + U 型，定性+容差）
 ```
 
 ## 运行
