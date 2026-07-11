@@ -65,6 +65,9 @@ code/
 ├── ch19/
 │   ├── __init__.py
 │   └── unsupervised.py           # 第 19 章：k-means (Lloyd) + PCA via SVD (Eckart–Young)
+├── ch20/
+│   ├── __init__.py
+│   └── gmm_em.py                 # 第 20 章：GMM-EM（似然单调爬升 + 软责任）
 └── tests/
     ├── test_ch01.py              # 第 1 章数值回归测试（低次容差断言 + 高次趋势断言）
     ├── test_ch02.py              # 第 2 章数值回归测试（确定性整数搜索，精确断言）
@@ -84,7 +87,8 @@ code/
     ├── test_ch16.py              # 第 16 章数值回归测试（L2 收缩 / L1 稀疏 / 正则改善泛化）
     ├── test_ch17.py              # 第 17 章数值回归测试（RBF>线性 / 支持向量稀疏 / 核矩阵PSD）
     ├── test_ch18.py              # 第 18 章数值回归测试（单树过拟合 / 森林降方差 / 提升降偏差）
-    └── test_ch19.py              # 第 19 章数值回归测试（k-means 单调收敛 / PCA Eckart–Young）
+    ├── test_ch19.py              # 第 19 章数值回归测试（k-means 单调收敛 / PCA Eckart–Young）
+    └── test_ch20.py              # 第 20 章数值回归测试（EM 似然单调 / 软责任 / 恢复参数）
 ```
 
 ## 运行
