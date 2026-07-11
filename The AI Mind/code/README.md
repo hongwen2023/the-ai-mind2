@@ -20,11 +20,15 @@ code/
 ├── ch04/
 │   ├── __init__.py
 │   └── thinking_in_code.py       # 第 4 章：向量化（标准化/成对距离 loop vs vectorized）
+├── ch05/
+│   ├── __init__.py
+│   └── turning_world_into_numbers.py  # 第 5 章：表示（混合表格→X；整数 vs one-hot 距离对照）
 └── tests/
     ├── test_ch01.py              # 第 1 章数值回归测试（低次容差断言 + 高次趋势断言）
     ├── test_ch02.py              # 第 2 章数值回归测试（确定性整数搜索，精确断言）
     ├── test_ch03.py              # 第 3 章数值回归测试（确定性计数，精确断言）
-    └── test_ch04.py              # 第 4 章数值回归测试（loop vs 向量化等价，精确断言）
+    ├── test_ch04.py              # 第 4 章数值回归测试（loop vs 向量化等价，精确断言）
+    └── test_ch05.py              # 第 5 章数值回归测试（表示的几何，精确断言）
 ```
 
 ## 运行
