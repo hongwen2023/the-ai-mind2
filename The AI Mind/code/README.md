@@ -17,10 +17,14 @@ code/
 ├── ch03/
 │   ├── __init__.py
 │   └── complexity_wall.py        # 第 3 章：多项式 vs 指数（斐波那契调用数 / 子集和枚举）
+├── ch04/
+│   ├── __init__.py
+│   └── thinking_in_code.py       # 第 4 章：向量化（标准化/成对距离 loop vs vectorized）
 └── tests/
     ├── test_ch01.py              # 第 1 章数值回归测试（低次容差断言 + 高次趋势断言）
     ├── test_ch02.py              # 第 2 章数值回归测试（确定性整数搜索，精确断言）
-    └── test_ch03.py              # 第 3 章数值回归测试（确定性计数，精确断言）
+    ├── test_ch03.py              # 第 3 章数值回归测试（确定性计数，精确断言）
+    └── test_ch04.py              # 第 4 章数值回归测试（loop vs 向量化等价，精确断言）
 ```
 
 ## 运行
