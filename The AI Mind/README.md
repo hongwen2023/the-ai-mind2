@@ -22,8 +22,9 @@
 | [`10_Chapter08_Geometry_of_Linear_Algebra.md`](10_Chapter08_Geometry_of_Linear_Algebra.md) | 第 8 章《线性代数——表示与变换的几何》（Book II 开篇：矩阵=变换/秩/投影/SVD/低秩逼近） |
 | [`11_Chapter09_Matrix_Calculus_and_Numerics.md`](11_Chapter09_Matrix_Calculus_and_Numerics.md) | 第 9 章《矩阵微分与数值基础》（梯度/雅可比/链式法则；**严格推导偿还 Ch7 梯度欠条**；log-sum-exp/条件数） |
 | [`12_Chapter10_Probability.md`](12_Chapter10_Probability.md) | 第 10 章《概率论——不确定性的演算》（随机变量/期望/贝叶斯/似然；**集中不等式 Hoeffding**——通往泛化界的桥） |
+| [`13_Chapter11_Statistical_Inference.md`](13_Chapter11_Statistical_Inference.md) | 第 11 章《统计推断——从数据到结论》（MLE/贝塞尔校正/MAP=正则化；**偏差-方差分解**——把 U 型曲线严格拆开） |
 | [`03_Self_Evaluation.md`](03_Self_Evaluation.md) | 独立外审自我评估（7 维打分 + 诚实列不足） |
-| [`code/`](code/) | 第 1–10 章配套代码 + 回归测试 + 锁定依赖（见 `code/README.md`） |
+| [`code/`](code/) | 第 1–11 章配套代码 + 回归测试 + 锁定依赖（见 `code/README.md`） |
 
 > **Book I（智能与计算的基础）已完整交付 7 章**（Ch1–Ch7）。**Book II（学习的数学，Ch8–Ch15）进行中** —— 兑现 Ch7 留下的四张欠条（梯度/交叉熵/优化/泛化）。Prelude P.1、架构、自评见上表。
 
@@ -42,7 +43,8 @@ python -m ch07.vertical_slice              # 复现第 7 章 logistic regression
 python -m ch08.geometry_of_linear_algebra  # 复现第 8 章 SVD 椭圆 + Eckart–Young
 python -m ch09.matrix_calculus_and_numerics # 复现第 9 章 梯度检验 + 稳定softmax + 条件数
 python -m ch10.probability                 # 复现第 10 章 蒙特卡洛 + Hoeffding 经验验证
-pytest -q                             # 跑全部数值回归测试（ch01–ch10，49 项）
+python -m ch11.bias_variance               # 复现第 11 章 偏差-方差分解表
+pytest -q                             # 跑全部数值回归测试（ch01–ch11，53 项）
 ```
 
 CI 见 `.github/workflows/aimind-ci.yml`：改动课程代码时自动重跑测试。
