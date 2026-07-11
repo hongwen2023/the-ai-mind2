@@ -35,6 +35,9 @@ code/
 ├── ch09/
 │   ├── __init__.py
 │   └── matrix_calculus_and_numerics.py  # 第 9 章：梯度检验 + 稳定softmax + 条件数
+├── ch10/
+│   ├── __init__.py
+│   └── probability.py            # 第 10 章：蒙特卡洛收敛 + Hoeffding 经验验证
 └── tests/
     ├── test_ch01.py              # 第 1 章数值回归测试（低次容差断言 + 高次趋势断言）
     ├── test_ch02.py              # 第 2 章数值回归测试（确定性整数搜索，精确断言）
@@ -44,7 +47,8 @@ code/
     ├── test_ch06.py              # 第 6 章数值回归测试（记忆vs泛化 + U 型，定性+容差）
     ├── test_ch07.py              # 第 7 章数值回归测试（梯度检验 + 学习发生 + 泛化）
     ├── test_ch08.py              # 第 8 章数值回归测试（SVD 几何 + Eckart–Young）
-    └── test_ch09.py              # 第 9 章数值回归测试（梯度检验 + softmax稳定性 + 条件数）
+    ├── test_ch09.py              # 第 9 章数值回归测试（梯度检验 + softmax稳定性 + 条件数）
+    └── test_ch10.py              # 第 10 章数值回归测试（蒙特卡洛收敛 + Hoeffding 上界）
 ```
 
 ## 运行
