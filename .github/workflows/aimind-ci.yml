@@ -1,0 +1,31 @@
+name: The AI Mind CI
+
+# 每次改动课程配套代码时，自动重跑第 1 章的招牌数值回归测试，
+# 守住"过拟合戏剧成立"这一教学结论（低次容差 + 高次趋势断言）。
+on:
+  push:
+    paths:
+      - "The AI Mind/code/**"
+      - ".github/workflows/aimind-ci.yml"
+  pull_request:
+    paths:
+      - "The AI Mind/code/**"
+      - ".github/workflows/aimind-ci.yml"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: "The AI Mind/code"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Reproduce Chapter 1 table
+        run: python -m ch01.learning_problem
+      - name: Run regression tests
+        run: pytest -q

@@ -1,0 +1,6 @@
+# The AI Mind —— 配套代码依赖（锁定版本以保证可复现）
+# 参考环境：Python 3.13, numpy 2.4.4
+numpy==2.4.4
+
+# 开发/测试用（运行 pytest 时需要；tests 也可用纯 python 兜底运行）
+pytest>=8.0
