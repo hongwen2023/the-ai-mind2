@@ -26,13 +26,17 @@ code/
 ├── ch06/
 │   ├── __init__.py
 │   └── induction_first_lesson.py  # 第 6 章：归纳（kNN 记忆vs泛化；训练/测试误差 U 型）
+├── ch07/
+│   ├── __init__.py
+│   └── vertical_slice.py         # 第 7 章：从零 logistic regression + 梯度下降 + 梯度检验
 └── tests/
     ├── test_ch01.py              # 第 1 章数值回归测试（低次容差断言 + 高次趋势断言）
     ├── test_ch02.py              # 第 2 章数值回归测试（确定性整数搜索，精确断言）
     ├── test_ch03.py              # 第 3 章数值回归测试（确定性计数，精确断言）
     ├── test_ch04.py              # 第 4 章数值回归测试（loop vs 向量化等价，精确断言）
     ├── test_ch05.py              # 第 5 章数值回归测试（表示的几何，精确断言）
-    └── test_ch06.py              # 第 6 章数值回归测试（记忆vs泛化 + U 型，定性+容差）
+    ├── test_ch06.py              # 第 6 章数值回归测试（记忆vs泛化 + U 型，定性+容差）
+    └── test_ch07.py              # 第 7 章数值回归测试（梯度检验 + 学习发生 + 泛化）
 ```
 
 ## 运行
