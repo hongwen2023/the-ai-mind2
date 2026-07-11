@@ -14,8 +14,9 @@
 | [`01_Prelude.md`](01_Prelude.md) | Prelude P.1《为什么学习 AI 需要一张地图》 |
 | [`02_Chapter01_The_Learning_Problem.md`](02_Chapter01_The_Learning_Problem.md) | 第 1 章《学习问题——经验如何变成能力》（含可运行 NumPy 实验、习题） |
 | [`04_Chapter02_Faces_of_Intelligence.md`](04_Chapter02_Faces_of_Intelligence.md) | 第 2 章《智能的多副面孔》（搜索/逻辑/学习三范式，含 minimax 井字棋实验、习题） |
+| [`05_Chapter03_Power_and_Cost_of_Computation.md`](05_Chapter03_Power_and_Cost_of_Computation.md) | 第 3 章《计算的能力与代价》（图灵机/停机问题/P vs NP/多项式 vs 指数，含复杂度实验、习题） |
 | [`03_Self_Evaluation.md`](03_Self_Evaluation.md) | 独立外审自我评估（7 维打分 + 诚实列不足） |
-| [`code/`](code/) | 第 1、2 章配套代码 + 回归测试 + 锁定依赖（见 `code/README.md`） |
+| [`code/`](code/) | 第 1–3 章配套代码 + 回归测试 + 锁定依赖（见 `code/README.md`） |
 
 ## 快速运行配套代码
 
@@ -24,7 +25,8 @@ cd "The AI Mind/code"
 pip install -r requirements.txt
 python -m ch01.learning_problem      # 复现第 1 章那张过拟合演示表
 python -m ch02.faces_of_intelligence # 复现第 2 章 minimax 井字棋 + 组合爆炸
-pytest -q                             # 跑全部数值回归测试（ch01 + ch02）
+python -m ch03.complexity_wall       # 复现第 3 章 多项式 vs 指数 计数表
+pytest -q                             # 跑全部数值回归测试（ch01 + ch02 + ch03）
 ```
 
 CI 见 `.github/workflows/aimind-ci.yml`：改动课程代码时自动重跑测试。
