@@ -25,8 +25,9 @@
 | [`13_Chapter11_Statistical_Inference.md`](13_Chapter11_Statistical_Inference.md) | 第 11 章《统计推断——从数据到结论》（MLE/贝塞尔校正/MAP=正则化；**偏差-方差分解**——把 U 型曲线严格拆开） |
 | [`14_Chapter12_Information_Theory.md`](14_Chapter12_Information_Theory.md) | 第 12 章《信息论——惊奇、熵与压缩》（熵/交叉熵/KL；**命名定理：min 交叉熵 ⇔ 最大似然 ⇔ min KL**——交叉熵合法性总闸门） |
 | [`15_Chapter13_Formalizing_Learning_ERM.md`](15_Chapter13_Formalizing_Learning_ERM.md) | 第 13 章《学习问题的形式化——损失、风险与 ERM》（真实风险/经验风险/ERM/**贝叶斯风险地板**/近似-估计误差分解/代理损失） |
+| [`16_Chapter14_Optimization.md`](16_Chapter14_Optimization.md) | 第 14 章《优化——如何下山》（凸性/**下降引理偿还 Ch7 GD 收敛欠条**/收敛率/SGD/非凸桥/KKT） |
 | [`03_Self_Evaluation.md`](03_Self_Evaluation.md) | 独立外审自我评估（7 维打分 + 诚实列不足） |
-| [`code/`](code/) | 第 1–13 章配套代码 + 回归测试 + 锁定依赖（见 `code/README.md`） |
+| [`code/`](code/) | 第 1–14 章配套代码 + 回归测试 + 锁定依赖（见 `code/README.md`） |
 
 > **Book I（智能与计算的基础）已完整交付 7 章**（Ch1–Ch7）。**Book II（学习的数学，Ch8–Ch15）进行中** —— 兑现 Ch7 留下的四张欠条（梯度/交叉熵/优化/泛化）。Prelude P.1、架构、自评见上表。
 
@@ -48,7 +49,8 @@ python -m ch10.probability                 # 复现第 10 章 蒙特卡洛 + Hoe
 python -m ch11.bias_variance               # 复现第 11 章 偏差-方差分解表
 python -m ch12.information_theory           # 复现第 12 章 熵/CE/KL + 命名定理
 python -m ch13.erm_and_bayes_risk           # 复现第 13 章 贝叶斯地板 + 风险分解
-pytest -q                             # 跑全部数值回归测试（ch01–ch13，62 项）
+python -m ch14.optimization                 # 复现第 14 章 GD 步长三态 + SGD
+pytest -q                             # 跑全部数值回归测试（ch01–ch14，68 项）
 ```
 
 CI 见 `.github/workflows/aimind-ci.yml`：改动课程代码时自动重跑测试。
