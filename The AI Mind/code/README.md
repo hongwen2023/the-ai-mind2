@@ -62,6 +62,9 @@ code/
 ├── ch18/
 │   ├── __init__.py
 │   └── trees_forests_boosting.py # 第 18 章：从零 CART 树 + 随机森林 + 梯度提升
+├── ch19/
+│   ├── __init__.py
+│   └── unsupervised.py           # 第 19 章：k-means (Lloyd) + PCA via SVD (Eckart–Young)
 └── tests/
     ├── test_ch01.py              # 第 1 章数值回归测试（低次容差断言 + 高次趋势断言）
     ├── test_ch02.py              # 第 2 章数值回归测试（确定性整数搜索，精确断言）
@@ -80,7 +83,8 @@ code/
     ├── test_ch15.py              # 第 15 章数值回归测试（泛化界 + 1/√n + 随机标签记忆）
     ├── test_ch16.py              # 第 16 章数值回归测试（L2 收缩 / L1 稀疏 / 正则改善泛化）
     ├── test_ch17.py              # 第 17 章数值回归测试（RBF>线性 / 支持向量稀疏 / 核矩阵PSD）
-    └── test_ch18.py              # 第 18 章数值回归测试（单树过拟合 / 森林降方差 / 提升降偏差）
+    ├── test_ch18.py              # 第 18 章数值回归测试（单树过拟合 / 森林降方差 / 提升降偏差）
+    └── test_ch19.py              # 第 19 章数值回归测试（k-means 单调收敛 / PCA Eckart–Young）
 ```
 
 ## 运行
