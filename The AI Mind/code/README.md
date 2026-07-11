@@ -29,6 +29,9 @@ code/
 ├── ch07/
 │   ├── __init__.py
 │   └── vertical_slice.py         # 第 7 章：从零 logistic regression + 梯度下降 + 梯度检验
+├── ch08/
+│   ├── __init__.py
+│   └── geometry_of_linear_algebra.py  # 第 8 章：SVD 椭圆几何 + 低秩逼近 Eckart–Young
 └── tests/
     ├── test_ch01.py              # 第 1 章数值回归测试（低次容差断言 + 高次趋势断言）
     ├── test_ch02.py              # 第 2 章数值回归测试（确定性整数搜索，精确断言）
@@ -36,7 +39,8 @@ code/
     ├── test_ch04.py              # 第 4 章数值回归测试（loop vs 向量化等价，精确断言）
     ├── test_ch05.py              # 第 5 章数值回归测试（表示的几何，精确断言）
     ├── test_ch06.py              # 第 6 章数值回归测试（记忆vs泛化 + U 型，定性+容差）
-    └── test_ch07.py              # 第 7 章数值回归测试（梯度检验 + 学习发生 + 泛化）
+    ├── test_ch07.py              # 第 7 章数值回归测试（梯度检验 + 学习发生 + 泛化）
+    └── test_ch08.py              # 第 8 章数值回归测试（SVD 几何 + Eckart–Young）
 ```
 
 ## 运行
