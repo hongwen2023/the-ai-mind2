@@ -7,12 +7,16 @@
 
 ```
 code/
-├── requirements.txt          # 锁定依赖（numpy==2.4.4）
+├── requirements.txt              # 锁定依赖（numpy==2.4.4）
 ├── ch01/
 │   ├── __init__.py
-│   └── learning_problem.py   # 第 1 章：学习问题（ERM / 经验风险 vs 真实风险 / 过拟合）
+│   └── learning_problem.py       # 第 1 章：学习问题（ERM / 经验风险 vs 真实风险 / 过拟合）
+├── ch02/
+│   ├── __init__.py
+│   └── faces_of_intelligence.py  # 第 2 章：搜索一注（minimax 井字棋 + alpha-beta + 组合爆炸）
 └── tests/
-    └── test_ch01.py          # 第 1 章数值的回归测试（低次容差断言 + 高次趋势断言）
+    ├── test_ch01.py              # 第 1 章数值回归测试（低次容差断言 + 高次趋势断言）
+    └── test_ch02.py              # 第 2 章数值回归测试（确定性整数搜索，精确断言）
 ```
 
 ## 运行
