@@ -80,6 +80,9 @@ code/
 ├── ch24/
 │   ├── __init__.py
 │   └── training.py               # 第 24 章：初始化对称性 + He + Adam vs GD（向量化 MLP）
+├── ch25/
+│   ├── __init__.py
+│   └── representation_learning.py # 第 25 章：线性探针三重基线 + 嵌入类比
 └── tests/
     ├── test_ch01.py              # 第 1 章数值回归测试（低次容差断言 + 高次趋势断言）
     ├── test_ch02.py              # 第 2 章数值回归测试（确定性整数搜索，精确断言）
@@ -104,7 +107,8 @@ code/
     ├── test_ch21.py              # 第 21 章数值回归测试（AUC双算法一致 / 不平衡揭穿 / CV方差）
     ├── test_ch22.py              # 第 22 章数值回归测试（线性栽XOR / MLP解XOR / 隐藏表示可分）
     ├── test_ch23.py              # 第 23 章数值回归测试（梯度检验 / fan-out += / MLP学会XOR）
-    └── test_ch24.py              # 第 24 章数值回归测试（全零对称失败 / He训得动 / Adam胜GD）
+    ├── test_ch24.py              # 第 24 章数值回归测试（全零对称失败 / He训得动 / Adam胜GD）
+    └── test_ch25.py              # 第 25 章数值回归测试（学到表示>随机投影>原始 / 嵌入类比）
 ```
 
 ## 运行
