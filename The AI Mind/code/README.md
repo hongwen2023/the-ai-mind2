@@ -92,6 +92,9 @@ code/
 ├── ch28/
 │   ├── __init__.py
 │   └── science_of_dl.py           # 第 28 章 研究里程碑①：从零复现双下降（随机特征+最小范数，尖峰@p=n+第二次下降+ASCII图）+玩具规模律
+├── ch29/
+│   ├── __init__.py
+│   └── attention.py               # 第 29 章（Book V 开篇）：从零 scaled dot-product attention（lookup 软查找 + √d_k 缩放对照）
 └── tests/
     ├── test_ch01.py              # 第 1 章数值回归测试（低次容差断言 + 高次趋势断言）
     ├── test_ch02.py              # 第 2 章数值回归测试（确定性整数搜索，精确断言）
@@ -120,7 +123,8 @@ code/
     ├── test_ch25.py              # 第 25 章数值回归测试（学到表示>随机投影>原始 / 嵌入类比）
     ├── test_ch26.py              # 第 26 章数值回归测试（CNN从零训到0.97 / 平移等变=0 / 参数40vs58000）
     ├── test_ch27.py              # 第 27 章数值回归测试（RNN解parity/稻草人≈0.5 / T≥16断崖 / 梯度消失 / rho^k精确）
-    └── test_ch28.py              # 第 28 章数值回归测试（尖峰@p=n / 过参数<甜蜜点 / |beta|倒双下降 / 规模律幂律）
+    ├── test_ch28.py              # 第 28 章数值回归测试（尖峰@p=n / 过参数<甜蜜点 / |beta|倒双下降 / 规模律幂律）
+    └── test_ch29.py              # 第 29 章数值回归测试（权重=概率分布 / lookup检索对 / √d_k防饱和 / softmax稳定）
 ```
 
 ## 运行
