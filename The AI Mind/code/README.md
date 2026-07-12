@@ -71,6 +71,9 @@ code/
 ├── ch21/
 │   ├── __init__.py
 │   └── evaluation.py             # 第 21 章：指标/ROC-AUC双算法/不平衡揭穿/k折CV
+├── ch22/
+│   ├── __init__.py
+│   └── perceptron_to_mlp.py      # 第 22 章：XOR 线性失败 vs MLP + 隐藏表示可分
 └── tests/
     ├── test_ch01.py              # 第 1 章数值回归测试（低次容差断言 + 高次趋势断言）
     ├── test_ch02.py              # 第 2 章数值回归测试（确定性整数搜索，精确断言）
@@ -92,7 +95,8 @@ code/
     ├── test_ch18.py              # 第 18 章数值回归测试（单树过拟合 / 森林降方差 / 提升降偏差）
     ├── test_ch19.py              # 第 19 章数值回归测试（k-means 单调收敛 / PCA Eckart–Young）
     ├── test_ch20.py              # 第 20 章数值回归测试（EM 似然单调 / 软责任 / 恢复参数）
-    └── test_ch21.py              # 第 21 章数值回归测试（AUC双算法一致 / 不平衡揭穿 / CV方差）
+    ├── test_ch21.py              # 第 21 章数值回归测试（AUC双算法一致 / 不平衡揭穿 / CV方差）
+    └── test_ch22.py              # 第 22 章数值回归测试（线性栽XOR / MLP解XOR / 隐藏表示可分）
 ```
 
 ## 运行
