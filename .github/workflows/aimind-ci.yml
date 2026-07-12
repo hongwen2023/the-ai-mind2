@@ -5,11 +5,11 @@ name: The AI Mind CI
 on:
   push:
     paths:
-      - "The AI Mind/code/**"
+      - "code/**"
       - ".github/workflows/aimind-ci.yml"
   pull_request:
     paths:
-      - "The AI Mind/code/**"
+      - "code/**"
       - ".github/workflows/aimind-ci.yml"
 
 jobs:
@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: "The AI Mind/code"
+        working-directory: "code"
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
