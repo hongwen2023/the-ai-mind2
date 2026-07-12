@@ -74,6 +74,9 @@ code/
 ├── ch22/
 │   ├── __init__.py
 │   └── perceptron_to_mlp.py      # 第 22 章：XOR 线性失败 vs MLP + 隐藏表示可分
+├── ch23/
+│   ├── __init__.py
+│   └── micrograd.py              # 第 23 章 里程碑①：从零 micro-autograd（Value+backward+训练XOR）
 └── tests/
     ├── test_ch01.py              # 第 1 章数值回归测试（低次容差断言 + 高次趋势断言）
     ├── test_ch02.py              # 第 2 章数值回归测试（确定性整数搜索，精确断言）
@@ -96,7 +99,8 @@ code/
     ├── test_ch19.py              # 第 19 章数值回归测试（k-means 单调收敛 / PCA Eckart–Young）
     ├── test_ch20.py              # 第 20 章数值回归测试（EM 似然单调 / 软责任 / 恢复参数）
     ├── test_ch21.py              # 第 21 章数值回归测试（AUC双算法一致 / 不平衡揭穿 / CV方差）
-    └── test_ch22.py              # 第 22 章数值回归测试（线性栽XOR / MLP解XOR / 隐藏表示可分）
+    ├── test_ch22.py              # 第 22 章数值回归测试（线性栽XOR / MLP解XOR / 隐藏表示可分）
+    └── test_ch23.py              # 第 23 章数值回归测试（梯度检验 / fan-out += / MLP学会XOR）
 ```
 
 ## 运行
