@@ -37,10 +37,11 @@
 | [`25_Chapter23_Backprop_and_Autograd.md`](25_Chapter23_Backprop_and_Autograd.md) | 第 23 章《反向传播与自动微分》（**工程里程碑①：从零 micro-autograd**；反向模式 AD=链式法则机械化；训练出 Ch22 的 MLP） |
 | [`26_Chapter24_Training_Science.md`](26_Chapter24_Training_Science.md) | 第 24 章《训练的科学与艺术》（初始化对称性/He-Xavier/梯度消失爆炸/BatchNorm/**Adam**/dropout/权重衰减） |
 | [`27_Chapter25_Representation_Learning.md`](27_Chapter25_Representation_Learning.md) | 第 25 章《表示学习》（Book IV 主题：深度学习=表示学习；分布式表示/嵌入/流形解耦/**线性探针三重基线**） |
+| [`28_Chapter26_Convolutional_Networks.md`](28_Chapter26_Convolutional_Networks.md) | 第 26 章《卷积网络与视觉的归纳偏置》（**工程里程碑②：从零训练小 CNN**；局部感受野+权重共享→平移等变；架构即归纳偏置；参数量对比） |
 | [`03_Self_Evaluation.md`](03_Self_Evaluation.md) | 独立外审自我评估（7 维打分 + 诚实列不足） |
-| [`code/`](code/) | 第 1–25 章配套代码 + 回归测试 + 锁定依赖（见 `code/README.md`） |
+| [`code/`](code/) | 第 1–26 章配套代码 + 回归测试 + 锁定依赖（见 `code/README.md`） |
 
-> **Book I（Ch1–7）、Book II（Ch8–15）、Book III（Ch16–21）三本书均已完整交付；Book IV（深度学习与表示，Ch22–28）进行中。**Book II 收官时 **Ch7 的四张欠条全部结清**（梯度 Ch9 / 交叉熵 Ch12 / GD 收敛 Ch14 / 泛化界 Ch15）；Book III 把数学引擎实例化成一整套经典模型（线性/核/树/聚类/混合）+ 诚实评估它们的手艺，并逼出 Book IV 深度学习（手工/固定表示 → 学到的表示）。Prelude P.1、架构、自评见上表。
+> **Book I（Ch1–7）、Book II（Ch8–15）、Book III（Ch16–21）三本书均已完整交付；Book IV（深度学习与表示，Ch22–28）进行中。**Book II 收官时 **Ch7 的四张欠条全部结清**（梯度 Ch9 / 交叉熵 Ch12 / GD 收敛 Ch14 / 泛化界 Ch15）；Book III 把数学引擎实例化成一整套经典模型（线性/核/树/聚类/混合）+ 诚实评估它们的手艺，并逼出 Book IV 深度学习（手工/固定表示 → 学到的表示）。Book IV 里程碑①（Ch23 micro-autograd）与里程碑②（Ch26 从零训练 CNN）均已交付。Prelude P.1、架构、自评见上表。
 
 ## 快速运行配套代码
 
@@ -72,7 +73,8 @@ python -m ch22.perceptron_to_mlp            # 复现第 22 章 XOR 线性失败 
 python -m ch23.micrograd                    # 里程碑①：micro-autograd 梯度检验 + 训练 XOR
 python -m ch24.training                     # 复现第 24 章 初始化对称性 + He + Adam vs GD
 python -m ch25.representation_learning       # 复现第 25 章 线性探针三重基线 + 嵌入类比
-pytest -q                             # 跑全部数值回归测试（ch01–ch25，110 项）
+python -m ch26.convnet                       # 里程碑②：从零训练小 CNN + 平移等变=0 + 参数量对比
+pytest -q                             # 跑全部数值回归测试（ch01–ch26，114 项）
 ```
 
 CI 见 `.github/workflows/aimind-ci.yml`：改动课程代码时自动重跑测试。
